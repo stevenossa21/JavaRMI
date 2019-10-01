@@ -12,9 +12,9 @@ public class Servidor {
     ObjetoRemoto or = new ObjetoRemoto();
     ObjetoOperations o = new ObjetoOperations();
     Registry r = LocateRegistry.createRegistry(10000);
-    Registry r1 = LocateRegistry.createRegistry(9000);
+    //Registry r1 = LocateRegistry.createRegistry(9000);
     r.rebind("objetoremoto", or);
-    r1.rebind("operaciones", o);
+    r.rebind("operaciones", o);
     System.out.println("Objeto publicado");
 	}
 }

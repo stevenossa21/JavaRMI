@@ -8,7 +8,7 @@ public class ObjetoOperations extends UnicastRemoteObject implements InterOperat
 
 	public ObjetoOperations() throws RemoteException {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	private static final long serialVersionUID = 1L;
@@ -34,7 +34,7 @@ public class ObjetoOperations extends UnicastRemoteObject implements InterOperat
 	}// division
 	
 	public int rest(int a, int b) {
-		System.out.println("multiplicando " + a + "- " + b + "...");
+		System.out.println("restando " + a + "- " + b + "...");
 		return a - b;
 	}// resta
 
